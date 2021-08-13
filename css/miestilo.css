@@ -1,0 +1,97 @@
+body {
+    background-image: url(image/fondo.jpg);
+    background-position: center center;
+    /* Para dejar la imagen de fondo centrada, v y h*/
+    background-repeat: no-repeat;
+    /* Para que la imagen de fondo no se repita */
+    /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+    background-attachment: fixed;
+    /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+    background-size: cover;
+    /* Se muestra un color de fondo mientras se está cargando la imagen de fondo o si hay problemas para cargarla */
+    background-color: antiquewhite;
+}
+
+html {
+    font-size: 16px;
+}
+nav ul li :hover{
+    background: rgb(118,139,94);
+}
+.seleccionado{
+    background: rgb(118,139,94)
+}
+
+.margeninf {
+    margin-bottom: 3%;
+}
+
+.margensup {
+    margin-top: 3%;
+}
+
+.margenizq {
+    margin-left: 4%;
+}
+
+.margender {
+    margin-right: 4%;
+}
+
+article p {
+    font-size: 150%;
+}
+
+.destacado {
+    background-color: rgb(190, 223, 153);
+    padding: 20px;
+    border-radius: 35px 0px 35px 0px !important;
+    -moz-border-radius: 35px 0px 35px 0px;
+    -webkit-border-radius: 35px 0px 35px 0px;
+    border: 2px solid #5878ca;
+}
+
+.cursodestacado {
+    background-color: brown;
+}
+.oculto{
+    display:none;
+}
+
+.textjustificado {
+    text-align: justify;
+}
+
+#aleatorio {
+    font-size: 200%;
+    font-weight: bold;
+}
+
+header h2 {
+    font-size: 150%;
+}
+
+header h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30 rems;
+    font-weight: bold;
+}
+
+footer h3 {
+    font-size: 150%;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+header img {
+    max-width: 150%;
+    /* height: auto; */
+}
+
+li {
+    font-size: 150%;
+    text-align: center;
+    align-items: center;
+}

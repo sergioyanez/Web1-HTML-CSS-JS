@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Biblioteca Escolar</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/miestilo.css">
+    <link rel="icon" href="image/logo.png">
+
+</head>
+
+<body>
+    <header class="margeninf container-sm-12 ">
+        <div class="row">
+            <div class="col-md-1 d-none d-sm-none  d-md-block">
+                <img src="image/logo.png">
+            </div>
+            <div class="col-sm-11">
+                <div class="row-sm-12">
+                    <div class="row-sm-12">
+                        <h1 class="text-center">
+                            Biblioteca La Lechuza Lectora
+                        </h1>
+                    </div>
+                    <div class="row-sm-12">
+                        <h2 class="text-center"> La biblioteca escolar es el servicio facilitador de los establecimientos educativos, organiza y utiliza los recursos necesarios para el aprendizaje, la adquisición de hábito de lectura y formación en el uso de la información.
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html"> Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link seleccionado" href="capacitaciones.html">Capacitación <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="recursos.html">Recursos <span class="sr-only">(current)</span></a>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+
+
+    <section class="container margensup">
+
+        <div class="row margeninf destacado">
+
+            <h3 class="text-center">Oferta de cursos:</h3>
+            <div class="w-100"></div>
+            <ol>
+                <li class="text-left"><i class="fas fa-arrow-right"></i> Curso de lectura y escritura</li>
+                <li class="text-left"><i class="fas fa-arrow-right"></i> Curso de lectura poesía</li>
+                <li class="text-left"><i class="fas fa-arrow-right"></i> Curso de escritura creativa</li>
+            </ol>
+            <div class="w-100"></div>
+            <h4 class="text-center">Todos los cursos comienzan el primer sábado de cada mes.</h4>
+        </div>
+        <div class="row">
+            <h3 class="text-center">Inscripciones Confirmadas:</h3>
+            <table class="table table-hover table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">Curso N° <i class="fas fa-book"></i></th>
+                        <th scope="col">Nombre <i class="fas fa-user-check"></i></th>
+                        <th scope="col">Apellido <i class="fas fa-user-check"></i> </th>
+                        <th scope="col">Mail <i class="icono fas fa-envelope"></i></th>
+                        <th scope="col" class="oculto">_id </th>
+                        <th scope="col">Editar </th>
+                        <th scope="col">Borrar </th>
+                    </tr>
+                </thead>
+                <tbody id="miTabla">
+
+                </tbody>
+            </table>
+            <button type="button" id="vaciarTabla" class="btn btn-default">Vaciar Listado</button>
+            <button type="button" id="cargarVarios" class="btn btn-default">Cargar Inscripciones x3</button>
+            <input class="form-control" id="miInput" type="text" placeholder="Filtrar...">
+
+        </div>
+        <div class="row">
+
+            <div class="container margensup destacado">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Formulario para inscripción:</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form id="formulario">
+                            <div class="form-group">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" class="form-control" id="nombreCliente" placeholder="Ingrese el Nombre">
+                            </div>
+                            <div class="form-group">
+                                <label for="apellido">Apellido</label>
+                                <input type="text" class="form-control" id="apellidoCliente" placeholder="Ingrese el Apellido">
+                            </div>
+                            <div class="form-group">
+                                <label for="curso">Curso</label>
+                                <input type="text" class="form-control" id="cursoCliente" placeholder="Ingrese el número de curso en el que se inscribe">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="emailCliente" placeholder="Ingrese su email">
+                            </div>
+                            <p>Captcha:</p>
+                            <p id="aleatorio"> </p>
+                            <input id="captcha" name="captcha" placeholder="Ingresa el captcha" />
+                            <button type="button" id="btnAgregar" class="btn btn-default"><i class="fas fa-redo"></i>Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="js/jquery.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/scriptCapacitaciones.js"></script>
+
+
+
+    <footer>
+        <h3 class="text-center bg-info margensup">
+            <i class="fas fa-map-marker"></i>Olavarría 154 - Rauch- <i class="fas fa-phone-square-alt"></i> 02494-254893 <i class="icono fas fa-envelope"></i> bibliotecaescolar@abc.gob.ar
+        </h3>
+    </footer>
+</body>
+
+</html>
